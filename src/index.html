@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Starter</title>
+	</head>
+	<body ng-controller="mainCtrl">
+		<h1>hello world {{2+2}}</h1>
+		<h1>{{hello}}</h1>
+		<input type="text" ng-model="hello" />
+		<br />
+		<div>
+			<ul>
+				<li><a ui-sref="home">Home</a></li>
+				<li><a ui-sref="posts">Posts</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<ui-view></ui-view>
+		</div>
+
+		<script src="../libs/angular/angular.js"></script>
+		<script src="../libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="index.js"></script>
+		<script src="components/posts-list/index.js"></script>
+		<script src="postsServices.js"></script>
+		<script src="routes.js"></script>
+	</body>
+</html>

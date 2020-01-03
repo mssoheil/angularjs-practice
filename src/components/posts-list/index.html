@@ -1,0 +1,7 @@
+<h2>POSTS</h2>
+<ul>
+	<li ng-repeat="post in posts | filter: search">
+		<h3>title: {{post.title}}</h3>
+		body: {{post.body}}
+	</li>
+</ul>
