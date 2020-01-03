@@ -1,0 +1,22 @@
+{
+  "name": "angularjs-with-bower",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "mssoheil <mssoheil88@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#1.6.0",
+    "angular-ui-router": "^1.0.24"
+  }
+}
